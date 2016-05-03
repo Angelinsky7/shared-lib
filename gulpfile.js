@@ -116,6 +116,9 @@ gulp.task('build', ['build:ts'], function () {
     ], { read: false }).pipe(plugins.clean());
 
     return gulp.src('./package.json')
+        .pipe(plugins.replace(/\"devDependencies\":\s{[^}]+},/g, "\"devDependencies\": {},"))
+        .pipe(plugins.replace(/\"dependencies\":\s{[^}]+},/g, "\"dependencies\": {}"))
+        .pipe(plugins.replace(/\"jspm\":\s{([^}]+[^,])*}/g, ""))
         .pipe(gulp.dest('./build/'));
 
 });
