@@ -1,0 +1,8 @@
+FROM node:5.11
+
+WORKDIR /var/www/app
+
+RUN npm install -g gulp jspm tsd
+    
+EXPOSE 3000
+CMD ["npm", "run", "start"]

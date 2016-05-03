@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    
+    .rect-inner {
+        display: flex;
+        background: blue;
+        justify-content: center;   
+        align-items: center;
+    }
+        
+}

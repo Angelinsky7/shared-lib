@@ -1,0 +1,18 @@
+version: '2'
+services:
+    app:
+        image: busybox
+        volumes: 
+            - .:/var/www/app
+        tty: true
+        
+    node:
+        build: 
+            context: .
+            dockerfile: Dockerfile-node
+        ports:
+            - "3000:3000"
+        volumes_from:
+             - app
+        environment:   
+            NODE_ENV: developpement

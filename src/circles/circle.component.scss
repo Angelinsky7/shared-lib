@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    
+    .circle-inner {
+        display: flex;
+        background: green;
+        justify-content: center;   
+        align-items: center;
+        border-radius: 50%;
+    }
+        
+}
