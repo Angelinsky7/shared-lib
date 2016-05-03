@@ -4,7 +4,7 @@ import 'rxjs';
 import { Component } from "angular2/core";
 import { bootstrap } from "angular2/platform/browser";
 
-import { CircleComponent, RectComponent } from "./shared.lib";
+import { CircleComponent, RectComponent } from "./core";
 
 @Component({
     selector: 'shared-lib-test',
