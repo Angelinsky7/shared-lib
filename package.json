@@ -1,6 +1,6 @@
 {
   "name": "shared-lib",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Shared Lib test",
   "main": "./build/shared-lib.js",
   "scripts": {
