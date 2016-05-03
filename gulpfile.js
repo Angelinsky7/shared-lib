@@ -115,6 +115,9 @@ gulp.task('build', ['build:ts'], function () {
         'build/test.d.ts'
     ], { read: false }).pipe(plugins.clean());
 
+    return gulp.src('./package.json')
+        .pipe(gulp.dest('./build/'));
+
 });
 
 gulp.task('build:ts', ['sass'], function () {
